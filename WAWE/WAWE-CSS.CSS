@@ -96,9 +96,9 @@ h6 {
 .content_title {
   width: 1920px;
   height: 1080px;
-  background: url("/WAWE/WAVE/img/title.png") 0 / 100% no-repeat;
+  z-index: 1;
+  background: url("/WAWE/WAVE/img/title+gradient.png") 0 / 100% no-repeat;
 }
-
 .title__menu {
   display: flex;
   justify-content: space-between;
@@ -113,7 +113,6 @@ h6 {
 }
 .titl__list {
   display: flex;
-
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -130,6 +129,10 @@ h6 {
 .titl__list li:nth-last-child(1) {
   margin: 0px;
 }
+.titl__list li:hover {
+  border-bottom: 1px solid #00b2a0;
+  padding-bottom: 5px;
+}
 .titl__list a {
   font-family: "Roboto Condensed";
   color: #ffffff;
@@ -138,6 +141,8 @@ h6 {
 .wawe {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
 }
 .wawe h1 {
   font-family: "Raleway";
@@ -146,9 +151,9 @@ h6 {
   font-weight: 700;
   line-height: 235px;
   letter-spacing: 0.6000000238418579px;
-  text-align: left;
-  margin-top: 230px;
-  margin-left: 590px;
+  margin-top: 260px;
+  display: flex;
+  justify-content: center;
 }
 .wawe__text {
   font-family: "Roboto Condensed";
@@ -156,11 +161,13 @@ h6 {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.6000000238418579px;
-  margin-top: 10px;
-  margin-left: 747px;
+  display: flex;
+  justify-content: center;
 }
 .wawe__img {
-  margin: 315px 950px 92px 950px;
+  display: flex;
+  justify-content: center;
+  margin-top: 315px;
 }
 /* <<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>WHAT__WAWE */
@@ -215,7 +222,6 @@ h6 {
 .shcool {
   background-color: #f8f8f8;
   height: 953px;
-  width: 1920px;
 }
 .container-shcool {
   margin: 0 auto;
@@ -382,7 +388,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>APEX */
 .apex {
   height: 1050px;
-  width: 1920px;
   background: url("/WAWE/WAVE/img/Rectangle\ 88.png") right top no-repeat;
 }
 .container__contant {
@@ -423,7 +428,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>APEX */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>gallery */
 .gallery {
-  width: 1920px;
   height: 1262px;
 }
 .container-gallery {
@@ -457,6 +461,7 @@ h6 {
   flex-direction: row;
 }
 .ul-gallery li {
+  cursor: pointer;
   padding-right: 20px;
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -524,7 +529,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>Quote */
 .quote {
   background: #f8f8f8;
-  width: 1920px;
   height: 200px;
 }
 .container-quote {
@@ -556,8 +560,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>Quote */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>VIDEO */
 .video {
-  width: 1920px;
-  height: 1003px;
 }
 .container-video {
   margin: 0 auto;
@@ -618,8 +620,9 @@ h6 {
 }
 .blog__title {
   display: flex;
-  justify-content: center;
+  margin-left: 850px;
   margin-top: 200px;
+  width: 1200px;
 }
 .blog__text {
   font-family: "Roboto Condensed";
@@ -629,14 +632,12 @@ h6 {
   line-height: 75px;
   letter-spacing: 0.6px;
   color: #01353e;
-  text-align: center;
 }
 .blog__decore {
   margin-top: 30px;
 }
 .wrapper__blog {
   margin-top: 220px;
-  width: 1920px;
   height: 800px;
   background: url("/WAWE/WAVE/img/Rectangle\ 103.png");
 }
@@ -644,7 +645,7 @@ h6 {
   margin: 0 auto;
   width: 1200px;
   padding-top: 315px;
-  padding-left: 600px;
+  padding-left: 620px;
 }
 .text__blog {
   font-family: "Roboto Condensed";
@@ -679,7 +680,6 @@ h6 {
 .team {
 }
 .container-team {
-  width: 1920px;
   height: 987px;
 }
 .team__title {
@@ -745,7 +745,6 @@ h6 {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TEAM */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>services */
 .services {
-  width: 1920px;
   height: 1245px;
   background-color: #f8f8f8;
 }
@@ -835,19 +834,20 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>services */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAP */
 .map {
-  width: 1920px;
   height: 1040px;
 }
 .contant-map {
-  margin: 200px 224px 200px 223px;
+  margin-top: 200px;
+
+  display: flex;
+  justify-content: center;
 }
+
 .contant-map:hover {
-  box-shadow: 0px 0px 100px 1px #00b2a0;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAP */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>application */
 .application {
-  width: 1920px;
   height: 1182px;
 }
 .container-application {
@@ -939,8 +939,6 @@ h6 {
   margin-bottom: 18px;
   padding-left: 15px;
   resize: none;
-}
-.textare__form:hover {
 }
 
 .form__contant div {
@@ -1036,7 +1034,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>application */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.FOOTER */
 .footer {
-  width: 1920px;
   height: 200px;
   background-color: #00b2a0;
 }
