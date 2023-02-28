@@ -330,12 +330,12 @@
       </div>
       <div class="video">
         <div class="container-video">
-          <!-- Тут должно быть видео, но его тут нет -->
           <div class="contant__video">
-            <img src="/WAWE/WAVE/img/Rectangle 100.png" alt="#" />
-          </div>
-          <div class="video__play">
-            <img src="/WAWE/WAVE/img/Polygon 1.png" alt="#" />
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=zZqxPozl2Ec"
+              ><img src="/WAWE/WAVE/img/wave+play.png" alt="#"
+            /></a>
           </div>
           <div class="subtatil__video">
             <div class="item1">
@@ -484,6 +484,7 @@
       <div class="map">
         <div class="contant-map">
           <a
+            target="_blank"
             href="https://www.google.com/maps/place/35544+%D0%93%D1%83%D0%B0%D1%82%D0%B8%D1%81%D0%B0,+%D0%9B%D0%B0%D1%81-%D0%9F%D0%B0%D0%BB%D1%8C%D0%BC%D0%B0%D1%81,+%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/@29.1171213,-13.6172436,14.04z/data=!4m6!3m5!1s0xc489f05798fb3cd:0x434f9b9a9afcb024!8m2!3d29.0739264!4d-13.4786352!16zL20vMDY0enFq?hl=RU"
             ><img src="/WAWE/WAVE/img/map.png" alt="#"
           /></a>
@@ -504,6 +505,7 @@
               <div class="input">
                 <p>Имя:</p>
                 <input
+                  placeholder="..."
                   tabindex="1"
                   class="input-form"
                   name="name"
@@ -514,6 +516,7 @@
               <div class="input">
                 <p>Телефон:</p>
                 <input
+                  placeholder="..."
                   tabindex="2"
                   class="input-form"
                   name="name"
@@ -525,13 +528,15 @@
                 <p>
                   Оставьте сообщение, и мы свяжемся с Вами в ближайшее время:
                 </p>
-                <input
+                <textarea
+                  class="textare__form"
+                  placeholder=""
                   tabindex="3"
-                  class="input-form"
-                  name="name"
-                  type="text"
-                  value=""
-                />
+                  name="text"
+                  id="0"
+                  cols="0"
+                  rows="0"
+                ></textarea>
               </div>
               <div class="block-button">
                 <button tabindex="4" class="form-button">ОТПРАВИТЬ</button>

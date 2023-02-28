@@ -148,7 +148,7 @@ h6 {
   letter-spacing: 0.6000000238418579px;
   text-align: left;
   margin-top: 230px;
-  margin-left: 654px;
+  margin-left: 590px;
 }
 .wawe__text {
   font-family: "Roboto Condensed";
@@ -166,7 +166,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>WHAT__WAWE */
 .what-wawe {
   height: 966px;
-  width: 1920px;
 }
 .container-what {
   margin: 0 auto;
@@ -565,17 +564,18 @@ h6 {
   width: 1200px;
 }
 .contant__video {
+  margin-top: 200px;
   z-index: 0;
 }
-.video__play {
-  margin-top: -350px;
-  margin-left: 550px;
-  z-index: 1;
+.container-video img:hover {
+  border: 1px;
+  padding: 0px;
+  box-shadow: 0px 0px 50px 0px #00b2a0;
 }
 .subtatil__video {
   display: flex;
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 .item__title {
@@ -612,7 +612,6 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>VIDEO */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>..BLOG */
 .blog {
-  width: 1920px;
   height: 1285px;
 }
 .container-blog {
@@ -620,6 +619,7 @@ h6 {
 .blog__title {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 .blog__text {
   font-family: "Roboto Condensed";
@@ -785,6 +785,20 @@ h6 {
   background-color: white;
   padding: 45px 30px 45px 30px;
 }
+.item__bloc:hover {
+  border: 1px;
+  padding: 0px;
+  box-shadow: 0px 0px 50px 0px #00b2a0;
+  margin-top: 200px;
+  width: 360px;
+  height: 577px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 45px 30px 45px 30px;
+}
+
 .contant__item {
   text-align: center;
   font-family: "Roboto Condensed";
@@ -826,6 +840,9 @@ h6 {
 }
 .contant-map {
   margin: 200px 224px 200px 223px;
+}
+.contant-map:hover {
+  box-shadow: 0px 0px 100px 1px #00b2a0;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAP */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>application */
@@ -893,6 +910,7 @@ h6 {
   margin-right: 260px;
 }
 .input-form {
+  width: 500px;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
@@ -900,9 +918,29 @@ h6 {
   line-height: 18px;
   letter-spacing: 0.6px;
   color: #00b2a0;
+  margin-left: 10px;
   margin-top: 34px;
   margin-bottom: 18px;
   padding-left: 15px;
+}
+.input-form:hover {
+}
+.textare__form {
+  height: 40px;
+  width: 580px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #00b2a0;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding-left: 15px;
+  resize: none;
+}
+.textare__form:hover {
 }
 
 .form__contant div {
