@@ -92,6 +92,9 @@ h6 {
 .main {
   /* margin: 0 auto; */
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 /* <<<<<<<<<<<<<<<TITLE */
 
@@ -576,6 +579,11 @@ h6 {
 .container-quote {
   margin: 0 auto;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .quote__text {
   display: flex;
@@ -587,7 +595,7 @@ h6 {
   line-height: 40px;
   letter-spacing: 0.6px;
   color: #242121;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 .qoute__author {
   display: flex;
@@ -679,7 +687,7 @@ h6 {
 .wrapper__blog {
   margin-top: 220px;
   height: 800px;
-  background: url("/WAWE/WAVE/img/Rectangle\ 103.png");
+  background: url("./WAVE/img/Rectangle\ 103.png");
 }
 .contant__blog {
   margin: 0 auto;
