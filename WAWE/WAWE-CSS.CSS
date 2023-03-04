@@ -732,6 +732,7 @@ h6 {
 .team {
 }
 .container-team {
+  margin-top: 200px;
   height: 987px;
 }
 .team__title {
