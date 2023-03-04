@@ -91,7 +91,7 @@ h6 {
 
 .main {
   /* margin: 0 auto; */
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 /* <<<<<<<<<<<<<<<TITLE */
 
@@ -102,7 +102,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .background-title {
@@ -112,9 +112,11 @@ h6 {
   top: 0;
   /* object-fit: fill; */
   height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /* object-fit: fill; */
 }
-
-
 
 .title__menu {
   display: flex;
@@ -124,7 +126,9 @@ h6 {
   z-index: 1;
   margin-top: 3.5rem;
   width: 100%;
+
 }
+
 
 .title__img {
 }
@@ -142,11 +146,14 @@ h6 {
   letter-spacing: 0.6000000238418579px;
   text-align: left;
   gap: 50px;
+
 }
 .titl__list li {
   letter-spacing: 0.6px;
   padding-bottom: 7px;
+ 
 }
+
 
 .titl__list li:hover {
   border-bottom: 1px solid #00b2a0;
@@ -161,6 +168,7 @@ h6 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
   max-width: 1200px;
   position: relative;
   z-index: 1;
@@ -188,18 +196,20 @@ h6 {
 .wawe__img {
   display: flex;
   justify-content: center;
-  margin-top: 315px;
+  margin-top: 220px;
 }
 /* <<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>WHAT__WAWE */
 .what-wawe {
-  height: 966px;
+  background-color: white;
+  max-height: 966px;
 }
 .container-what {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .title__what {
+  margin-top: 190px;
   display: flex;
   justify-content: center;
 }
@@ -211,18 +221,18 @@ h6 {
   letter-spacing: 0.6000000238418579px;
   text-align: center;
   color: #01353e;
-  margin-top: 190px;
 }
 .title__decore {
-  margin-top: 210px;
+  margin-top: 25px;
 }
-.what__column {
+.block__column {
   margin-top: 100px;
   display: flex;
+  gap: 30px;
 }
 .what__column p {
-  width: 480px;
-  height: 87px;
+  max-width: 480px;
+  max-height: 87px;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
@@ -233,20 +243,24 @@ h6 {
   margin: 0px 0px 50px 0px;
 }
 
-.what__column1 {
+.what__column {
   margin-right: 120px;
 }
-.what__column2 {
+.what__column p:nth-child(1) {
+  padding-bottom: 40px;
+}
+.what__column p:nth-child(2) {
+  padding-bottom: 60px;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>SCHOOL */
 .shcool {
   background-color: #f8f8f8;
-  height: 953px;
+  max-height: 953px;
 }
 .container-shcool {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .shcool__title {
   display: flex;
@@ -270,7 +284,7 @@ h6 {
   display: flex;
 }
 .item__terms1 {
-  width: 400px;
+  max-width: 33%;
 }
 .subtitle__terms {
   display: flex;
@@ -299,7 +313,7 @@ h6 {
   padding: 32px 29px 0px 0px;
 }
 .item__terms2 {
-  max-width: 400px;
+  max-width: 33%;
 }
 .text__terms2 {
   display: flex;
@@ -321,7 +335,7 @@ h6 {
   padding: 20px 20px 0px 0px;
 }
 .item__terms3 {
-  max-width: 400px;
+  max-width: 33%;
 }
 .text__terms3 {
   font-family: "Roboto Condensed";
@@ -409,7 +423,7 @@ h6 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>APEX */
 .apex {
   display: flex;
-  height: 1050px;
+  max-height: 1050px;
 }
 .background-apex {
 }
@@ -434,15 +448,17 @@ h6 {
   margin-top: 220px;
 }
 .contant__apex {
-  width: 550px;
+  max-width: 550px;
   margin-top: 100px;
+}
+.contant__text {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.6px;
-  color: #242121;
+  color: black;
 }
 .contant__apex p {
   margin-bottom: 30px;
@@ -457,9 +473,10 @@ h6 {
 }
 .container-gallery {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .title__gallery {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
 }
@@ -558,10 +575,11 @@ h6 {
 }
 .container-quote {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .quote__text {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 400;
@@ -569,10 +587,10 @@ h6 {
   line-height: 40px;
   letter-spacing: 0.6px;
   color: #242121;
-  margin: 80px 0px 0px 250px;
+  padding-top: 80px;
 }
 .qoute__author {
-  position: absolute;
+  display: flex;
   font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 300;
@@ -580,7 +598,7 @@ h6 {
   line-height: 18px;
   letter-spacing: 0.6px;
   color: #242121;
-  margin: 120px 0px 0px 690px;
+  padding: 0px 0px 0px 700px;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>Quote */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>VIDEO */
@@ -588,7 +606,7 @@ h6 {
 }
 .container-video {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .contant__video {
   margin-top: 200px;
@@ -602,7 +620,8 @@ h6 {
 .subtatil__video {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  gap: 100px;
+  margin-top: 100px;
 }
 
 .item__title {
@@ -626,13 +645,10 @@ h6 {
   color: #242121;
 }
 .item1 {
-  margin-right: 100px;
 }
 .item2 {
-  margin-right: 100px;
 }
 .item3 {
-  margin-right: 100px;
 }
 .item4 {
 }
@@ -644,10 +660,9 @@ h6 {
 .container-blog {
 }
 .blog__title {
+  margin-top: 190px;
   display: flex;
-  margin-left: 780px;
-  margin-top: 200px;
-  width: 1200px;
+  justify-content: center;
 }
 .blog__text {
   font-family: "Roboto Condensed";
@@ -668,7 +683,7 @@ h6 {
 }
 .contant__blog {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-top: 315px;
   padding-left: 620px;
 }
@@ -694,7 +709,7 @@ h6 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   margin-top: 260px;
 }
 .img__blog img {
@@ -726,7 +741,7 @@ h6 {
 }
 .contant__team {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   margin-top: 210px;
@@ -775,7 +790,7 @@ h6 {
 }
 .container-services {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .title__services {
   display: flex;
@@ -876,7 +891,7 @@ h6 {
 }
 .container-application {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .title__contant {
   display: flex;
@@ -903,8 +918,8 @@ h6 {
 }
 .form__contant {
   margin-right: 30px;
-  width: 600px;
-  height: 460px;
+  max-width: 600px;
+  max-height: 460px;
 }
 .input {
   display: flex;
